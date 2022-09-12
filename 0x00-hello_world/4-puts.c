@@ -1,14 +1,21 @@
-#includ <stdio.h>
+#include <stdio.h>
+
+
 
 /**
-*main - Entry point
-*
-*Return; Always 0(success)
-*/
+
+ * main - Entry point
+
+ *
+
+ * Return: Always 0 (Success)
+
+ */
+
 init main(void)
 {
-chair mystring [] = "\" Programming is like building a multilingual puzzle\n";
-Puts(mystring);
+ char Mystring [] ="\" Programming is like building a multilingual puzzle\n";
+ Puts(Mystring);
 
-return (0);
+ return (0);
 }
