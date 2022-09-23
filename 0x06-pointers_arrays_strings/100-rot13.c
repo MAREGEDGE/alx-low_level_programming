@@ -1,23 +1,28 @@
 #include "main.h"
 /**
- *  leet - function that encode a string
- * @str:string that will be encoded
- * Return:returns encoded string
+ * rot13 - encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
-char *leet(char *str)
+char *rot13(char *s)
 {
-	int index1 = 0, index2;
-	char leet[8] = { 'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (str[++index1])
+	while (*(s + count) != '\0')
 	{
-		for (index2 = 0; index2 <= 7; index2++)
+		for (i = 0; i < 52; i++)
 		{
-			if (str[index1] == leet[index2] ||
-			str[index1] - 32 == leet[index2])
-				str[index1] = index2 + '0';
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
 		}
+		count++;
 	}
-	return (str);
+
+	return (s);
 }
