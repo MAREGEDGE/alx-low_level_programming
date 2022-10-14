@@ -21,6 +21,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (str)
 			printf("%s", str);
+		else
+			printf("(nil)");
 
 		if (i < n - 1)
 			if (separator)
@@ -30,3 +32,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	printf("\n");
 	va_end(valist);
 }
+	
