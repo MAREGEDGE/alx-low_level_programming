@@ -1,0 +1,10 @@
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v171)
+"   /c/Users/nb/Marege/alx-low_level_programming/0x1C-makefiles/__pycache__
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../
+./
+5-island_perimeter.cpython-38.pyc
